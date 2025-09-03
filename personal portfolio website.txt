@@ -1,0 +1,67 @@
+**Personal Portfolio Website**
+
+*Technologies* - HTML, CSS, JavaScript
+
+***Project Description***
+
+*Objective*
+Create a personal portfolio website to showcase your skills, projects, and resume. This
+project will help you practice HTML for structuring web content, CSS for styling, and JavaScript
+for interactivity.
+
+*Requirements*
+
+Home Page:
+- Design a visually appealing landing page that introduces you.
+- Include your name, a brief bio, and a profile picture.
+- Add navigation links (e.g., About, Projects, Contact) to other sections of the
+website.
+
+About Page:
+- Create an "About Me" section where you can provide more information about
+yourself.
+- Include details like your education, work experience, and hobbies.
+- Use HTML to organize content and CSS for styling.
+Projects Page:
+- Design a section to display your software development projects.
+- Showcase project titles, descriptions, and images.
+- Use CSS to create an organized and visually appealing project gallery.
+
+Contact Page:
+- Create a contact form that allows visitors to send you messages.
+- Include fields for name, email, subject, and message.
+- Implement JavaScript validation to ensure required fields are filled out.
+Responsive Design:
+- Ensure that your website is responsive and looks good on various screen sizes
+(e.g., desktop, tablet, mobile).
+- Use media queries and flexible layouts to achieve responsiveness.
+
+Navigation:
+- Implement smooth scrolling to navigate between sections.
+- Highlight the active navigation link based on the current section.
+Interactivity:
+- Add interactive elements, such as hover effects on buttons and images.
+- Use JavaScript to create a dynamic user experience (e.g., image sliders, pop-up
+modals).
+
+Style and Layout:
+- Apply CSS styles to make your website visually appealing.
+- Pay attention to typography, color schemes, and spacing.
+
+Resume:
+- Provide a downloadable PDF version of your resume.
+- Create a link or button that opens the resume in a new tab.
+
+Submission Guidelines:
+- Host your website on a web hosting platform or provide the source code for review.
+- Include a README.md file with instructions on how to navigate your website and any
+additional features you've implemented.
+
+Grading Criteria:
+Your project will be evaluated based on the following criteria:
+- Completion of all required sections (Home, About, Projects, Contact).
+- Responsive design that works well on various devices.
+- Functionality of the contact form with JavaScript validation.
+- Overall visual appeal and user experience.
+- Code quality, organization, and comments.
+- Creativity and additional features (e.g., interactive elements).
