@@ -1,0 +1,181 @@
+body {
+    background-color: #292F36;
+    color: #F7B538;
+    font-family: "Outfit";
+}
+html {
+    scroll-behavior: smooth;
+}
+h1{
+    margin-top: 0;
+}
+h2{
+    font-size: 40px;
+    font-weight: 800;
+}
+nav {
+    display: flex;
+    color: white;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+.navbar.scrolled {
+    background: #21262c;
+    transition: all 1s;
+}
+ul{
+    display: flex;
+}
+li {
+    display: flex;
+    padding-right: 4em;
+}
+li:nth-of-type(1) {
+    padding-left: 5em;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+a:hover {
+    color: #F7B538;
+    text-shadow: #F7B538 1px 0 8px;
+    text-decoration: none;
+    transition: all 300ms;
+}
+#introPage{
+    padding: 3em;
+}
+#intro-box {
+    padding: 50px;
+    margin-top: 1em;
+    width: 600px;
+    font-size: 55px;
+    box-shadow: 10px 5px 5px #F7B538;
+}
+#intro-box:hover {
+    box-shadow: 15px 10px 10px #F7B538;
+    font-size: 60px;
+    transition: all 1s;
+}
+#intro-box span {
+    background-color: #F7B538;
+    color:#292F36;
+    padding: 0.1em;
+    font-weight: 500;
+}
+aside{
+    float: right;
+}
+#introPage aside img {
+    width: 330px;
+    height: 470px;
+    padding-top: 4em;
+    border-radius: 5%;
+}
+#aboutPage {
+    margin-top: 2em;
+    padding: 4em;
+    text-align: center  ;
+}
+#aboutPage aside{
+    float: left;
+    margin-right: 2em;
+}
+#aboutPage aside img {
+    width: 400px;
+    height: 480px;
+    padding-right: 2em;
+    border-radius: 5%;
+}
+#aboutPage button {
+    padding: 15px 20px;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    background-color: #292F36;
+    color: #F7B538;
+    border-radius: 3%;
+    border: 2px solid #F7B538;
+}
+#aboutPage button:hover {
+    background-color: #F7B538;
+    color:#292F36;
+    box-shadow: 2px 2px 2px #F7B538;
+    transition: all 700ms;
+    border: none;
+}
+#contactPage h2 {
+    font-size: 50px;
+    margin-bottom: 0.7em;
+}
+#contactPage p{
+    font-size: 40px;
+} 
+#contactPage img {
+    padding-top: 0;
+    margin-left: 1em;
+}
+.autoShow {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 100vh;
+}
+@keyframes text-appear {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.imageReveal {
+    animation: imageReveal both;
+    animation-timeline: view(10%, 5%);
+}
+@keyframes imageReveal {
+    from{
+        filter: saturate(0) contrast(4) brightness(.1) blur(5px);
+        opacity: 0;
+        scale: .95;
+        translate: 0 4rem;
+    }
+    to {
+        filter: none;
+        opacity: 1;
+        scale: 1;
+        translate: 0;
+    }
+}
+.fadeUp {
+    animation: fadeUp both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 100vh;
+}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px) scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp {
+  animation: 1s fadeInUp;
+}
