@@ -1,6 +1,5 @@
-const a = document.querySelector("a");
-a.addEventListener("click", function() {
-  window.addEventListener("scroll", function () {
-    a.classList.add('active-state');
-  })
+const cfs = document.querySelectorAll(".container-fluid");
+cfs.forEach((cf) => {
+  const hr = document.createElement("hr");
+  cf.insertAdjacentElement("afterend", hr);
 })
