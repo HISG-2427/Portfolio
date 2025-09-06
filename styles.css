@@ -64,6 +64,7 @@ a:hover {
     text-shadow: #F7B538 1px 0 8px;
     text-decoration: none;
     transition: all 300ms;
+    cursor: none;
 }
 i{
     margin-right: 1em;

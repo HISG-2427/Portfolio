@@ -1,6 +1,11 @@
 const cfs = document.querySelectorAll(".container-fluid");
 const cursorDot = document.querySelector(".cursor-dot");
 const cursorOutline = document.querySelector(".cursor-outline");
+const aside = document.querySelectorAll("aside");
+const link = document.querySelectorAll("a");
+const nav = document.querySelector("nav");
+const body = document.querySelector("body");
+
 
 cfs.forEach((cf) => {
   const hr = document.createElement("hr");
@@ -19,3 +24,19 @@ window.addEventListener("mousemove", (e) => {
     top: `${posY}px`
   }, { duration: 300, fill: "forwards"})
 })
+
+aside.forEach((a) => {
+  a.addEventListener("mouseenter", () => {
+    cursorDot.style.opacity = 0;
+    a.style.cursor = none;
+  })
+  a.addEventListener("mouseleave", () => {
+    cursorDot.style.opacity = 1;
+  })
+});
+nav.addEventListener("mouseenter", () => {
+  cursorDot.style.opacity = 0;
+});
+nav.addEventListener("mouseleave", () => {
+  cursorDot.style.opacity = 1;
+});
