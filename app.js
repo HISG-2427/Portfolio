@@ -5,6 +5,7 @@ const aside = document.querySelectorAll("aside");
 const link = document.querySelectorAll("a");
 const nav = document.querySelector("nav");
 const body = document.querySelector("body");
+const animateBlock = document.querySelector('.animate-block');
 
 
 cfs.forEach((cf) => {
@@ -34,9 +35,17 @@ aside.forEach((a) => {
     cursorDot.style.opacity = 1;
   })
 });
+
 nav.addEventListener("mouseenter", () => {
   cursorDot.style.opacity = 0;
 });
 nav.addEventListener("mouseleave", () => {
+  cursorDot.style.opacity = 1;
+});
+
+animateBlock.addEventListener("mouseenter", () => {
+  cursorDot.style.opacity = 0;
+});
+animateBlock.addEventListener("mouseleave", () => {
   cursorDot.style.opacity = 1;
 });
