@@ -151,12 +151,17 @@ aside{
 #contactPage p{
     width: 600px;
     font-size: 30px;
-    margin-right: 2em;
 } 
 #contactPage img {
-    margin-top: 1em;
+    margin-top: 3.5em;
+    margin-right: 8em;
     width: 300px;
     height: auto;
+    border-radius: 3%;;
+}
+#contactPage img:hover {
+    width: 350px;
+    transition: all 500ms ease-in-out;
 }
 .animate-block img {
     width: 270px;
