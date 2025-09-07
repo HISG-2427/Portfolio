@@ -17,6 +17,7 @@ h2{
     font-size: 40px;
     font-weight: 800;
     text-align: center;
+    text-shadow: #797978 1px 0 8px;
 }
 .cursor-dot {
     height: 50px;
@@ -153,7 +154,7 @@ aside{
     margin-right: 2em;
 } 
 #contactPage img {
-    margin-top: 5em;
+    margin-top: 1em;
     width: 300px;
     height: auto;
 }
