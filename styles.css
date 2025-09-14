@@ -187,7 +187,7 @@ button a:hover {
 @keyframes scrolling {
     from{
         opacity: 0;
-        transform: translateX(500px);
+        transform: translateX(1200px);
     }
     to {
         opacity: 1;
