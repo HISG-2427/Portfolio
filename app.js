@@ -4,6 +4,10 @@ const cursorOutline = document.querySelector(".cursor-outline");
 const aside = document.querySelectorAll("aside");
 const link = document.querySelectorAll("a");
 const nav = document.querySelector("nav");
+const navUl = document.querySelector("nav ul");
+const navLi = document.querySelector("nav li");
+const basePage = document.querySelector("#base-page");
+const navbarToggler = document.querySelector(".navbar-toggler");
 const body = document.querySelector("body");
 const animateBlock = document.querySelector('.animate-block');
 
@@ -12,6 +16,14 @@ cfs.forEach((cf) => {
   const hr = document.createElement("hr");
   cf.insertAdjacentElement("afterend", hr);
 })
+
+function navbarTogglerClick() {
+  navUl.style.flexDirection = "column";
+  basePage.style.paddingLeft = "0";
+  nav.style.fontSize = "20px";
+  nav.style.padding = "1em";
+  nav.style.backgroundColor = "#21262c";
+}
 
 window.addEventListener("mousemove", (e) => {
   const posX = e.clientX;
